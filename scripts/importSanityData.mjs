@@ -11,11 +11,11 @@ dotenv.config({ path: path.resolve(__dirname, '../.env.local') });
 
 // Create Sanity client
 const client = createClient({
-  projectId: process.env.dbnzhy4c,
-  dataset: process.env.production,
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   useCdn: true,
-  apiVersion: '2021-03-25',
-  token: process.env.skfNLmCUBgDcJLpDwajnHogX2koplLgEK5DpG1Vuqcpt9k7pIU28vkL2CibeRe9lk9ZrZufwxqqlh3Pihhcp5pFFivHqIMxFjGbYVd49FG6M9HzTrIBAsJIIRK9a5rO330EEZlPCfiP03x9Ai1s1SpjmuVZOaZ1QMKwMeCFIzIMaBvcyMAkW,
+  apiVersion: '2025-01-13',
+  token: process.env.SANITY_API_TOKEN,
 });
 
 async function uploadImageToSanity(imageUrl) {
